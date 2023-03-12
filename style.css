@@ -198,4 +198,8 @@ button:hover{
     #results{
         padding: 0 6px;
     }
+    .result{
+        width: 100vw;
+        height: 100vh;
+    }
 }
