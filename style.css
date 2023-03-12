@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    font-family: monospace;
+    background-color: #00425A;
+}
+.title{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #FC7300;
+    text-decoration: underline;
+}
+.mainFrame{
+    width: 100%;
+}
+.playersName{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    color: #FC7300;
+    font-size: 15px;
+}
+.gameBoard{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+.board{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    gap: 5px;
+    border-color: black;
+    grid-template-rows: 120px 120px 120px;
+}
+.box{
+    border-radius: 6px;
+    border-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #BFDB38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: #1F8A70;
+}
+.box:hover{
+    border: 3px solid black;
+    box-shadow: 0 0 10px black;
+}
+.player1, .player2{
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+/* -------------------result-------------------- */
+
+.result{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+.removeClass{
+    display: none;
+}
+.result h2{
+
+}
+#results{
+    text-align: center;
+    display: block;
+}
+#winner{
+    text-transform: capitalize;
+}
+.playAgain{
+    height: 60px;
+}
+
+/* ---------------------------popup----------------------- */
+
+.popup{
+    background-color: #00425A;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+input{
+    background-color: #0d607e;
+    width: 400px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 0 40px #00425A;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0;
+    outline: none;
+    color: white;
+    text-transform: capitalize;
+}
+button{
+    width: 200px;
+    font-size: 20px;
+    border: 0.5px solid white;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    background-color: #0d607e;
+    cursor: pointer;
+    color: white;
+}
+/* -------------------mobile--------------- */
+
+@media screen and (max-width:550px) {
+    html, body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    .popup{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        width: 100%;
+        display: block;
+    }
+    input{
+        width: 92%;
+        margin: 5px 15px;
+    }
+    form button{
+        width: 50%;
+        height: 45px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+    .gameBoard{
+        width: 100vw;
+        height: 100vw;
+    }
+    .board{
+        width: 97%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        border-color: black;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .playersName{
+        display: block;
+        margin: 40px 8px;
+        color: #FC7300;
+        font-size: 12.5px;
+    }
+    .playersName h2{
+        margin: 10px 0;
+    }
+    .player1, .player2{
+        font-size: 25px;
+    }
+    #results h2{
+        font-size: 45px;
+    }
+    #results{
+        padding: 0 6px;
+    }
+}

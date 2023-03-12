@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Toc Toe</title>
+</head>
+<body>
+    <!-- -------------------------popup------------------------ -->
+    <div class="popup">
+        <form class="form">
+            <input id="player1" type="text" placeholder="Player 1" required>
+            <input id="player2" type="text" placeholder="Player 2" required>
+            <div class="btn">
+                <button type="submit" id="letsPlay">Let's Play</button>
+            </div>
+        </form>
+    </div>
+    <!-- ------------------------------result---------------------------- -->
+    <div class="result removeClass">
+        <div id="results">
+            <h2 id="winner"></h2><h2> won the game.</h2>
+            <a href="index.html"><button class="playAgain">Play again</button></a>
+        </div>
+        
+    </div>
+    <!-- -----------------------------------mainFramle------------------------------ -->
+    <div class="mainFrame">
+        <div class="row title">
+            <h1>Tic Toc Toe</h1>
+        </div>
+        <div class="row playersName">
+            <h2>Player 1 (O) : <h2 class="player1"></h2></h2>
+            <h2>Player 2 (X) : <h2 class="player2"></h2></h2>
+        </div>
+        <div class="row gameBoard">
+            <div class="board">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+                <div class="box box6"></div>
+                <div class="box box7"></div>
+                <div class="box box8"></div>
+                <div class="box box9"></div>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
