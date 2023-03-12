@@ -9,7 +9,10 @@ buttons.forEach(function(box){
             this.style.pointerEvents = "none";
             noOfBox += 1;
             if(noOfBox == 9){
-
+                document.querySelector(".board").style.pointerEvents = "none";
+                document.querySelector(".mainFrame").style.opacity = "0.4";
+                document.querySelector("#winner").innerHTML = "Draw ! no one";
+                document.querySelector(".result").classList.remove("removeClass");
             }
             checkresult();
         }
@@ -19,7 +22,10 @@ buttons.forEach(function(box){
             this.style.pointerEvents = "none";
             noOfBox += 1;
             if(noOfBox == 9){
-                
+                document.querySelector(".board").style.pointerEvents = "none";
+                document.querySelector(".mainFrame").style.opacity = "0.4";
+                document.querySelector("#winner").innerHTML = "Draw ! no one";
+                document.querySelector(".result").classList.remove("removeClass");
             }
             checkresult();
         }
